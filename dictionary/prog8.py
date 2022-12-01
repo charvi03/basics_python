@@ -7,3 +7,4 @@ thisdict = {
 
 thisdict.update({"color": "red"})
 print(thisdict)
+print("the model of car is ", thisdict.get('model'))
