@@ -1,0 +1,9 @@
+Months = set(["January", "February", "March", "April", "May", "June"])
+print("\nprinting the original set ... ")
+print(Months)
+print("\nAdding other months to the set...")
+Months.add("July")
+Months.add("August")
+print("\nPrinting the modified set...")
+print(Months)
+
