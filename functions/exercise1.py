@@ -5,4 +5,6 @@ def sum_100_natural_numbers():
     return sum
 
 
-print(sum_100_natural_numbers())
+print("Sum is", sum_100_natural_numbers())
+
+
