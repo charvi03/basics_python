@@ -4,4 +4,3 @@ summ = 0
 for i in range(0, length):
     summ = summ + list1[i]
 print("The sum of elements is", summ)
-

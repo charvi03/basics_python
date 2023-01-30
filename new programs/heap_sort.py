@@ -33,7 +33,7 @@ def heapSort(arr):
     # Build a maxheap.
     # Since last parent will be at ((n//2)-1) we can start at that location.
 
-    for i in range(n // 2 - 1, -1, -1):
+    for i in range(n // 2 , -1, -1):
         heapify(arr, n, i)
 
     # One by one extract elements
