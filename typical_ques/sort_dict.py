@@ -1,7 +1,11 @@
-dt = {5: 4, 1: 6, 6: 3}
+dic= {1: 13, 2: 7, 3: 0, 4: 10 }
 
-sorted_dt = {key: value for key, value in sorted(dt.items(), key=lambda item: item[1])}
+sorted_dic= {}
+sorted_keys = sorted(dic, key=dic.get)
 
-print(sorted_dt)
-sorted_dt_value = sorted(dt.values())
-print(sorted_dt_value)
+print("Original dictionary: ",dic)
+print("Sorted dictionary: ", sorted_dic)
+for i in sorted_keys:
+    sorted_dic[i] = dic[i]
+
+print(sorted_dic)

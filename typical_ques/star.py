@@ -1,27 +1,22 @@
-rows = 3
-i = 1
-while i <= rows:
-    j = i
-    while j < rows:
-        # display space
-        print(' ', end=' ')
-        j += 1
-    k = 1
-    while k <= i:
-        print('*', end=' ')
-        k += 1
-    print()
-    i += 1
+# left pascal triangle
+n = 3
 
-i = rows
-while i >= 1:
-    j = i
-    while j <= rows:
-        print(' ', end=' ')
-        j += 1
-    k = 1
-    while k < i:
-        print('*', end=' ')
-        k += 1
-    print('')
-    i -= 1
+# upper triangle
+for i in range(n):
+    # print spaces
+    for j in range(n - i - 1):
+        print(' ', end='')
+    # print stars
+    for k in range(i + 1):
+        print('*', end='')
+    print()
+
+# lower triangle
+for i in range(n - 1):
+    # print spaces
+    for j in range(i + 1):
+        print(' ', end='')
+    # print stars
+    for k in range(n - i - 1):
+        print('*', end='')
+    print()
