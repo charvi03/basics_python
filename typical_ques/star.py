@@ -1,5 +1,5 @@
 # left pascal triangle
-n = 3
+n = 5
 
 # upper triangle
 for i in range(n):
